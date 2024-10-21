@@ -36,10 +36,12 @@ def intersect_with_grid(shapefile, grid_size):
     return complete_grid_gdf
 
 def main():
+    # ‰»Î
     input_shapefile = r'D:\shapefileceshi\in\jiangsuwater.shp'
     grid_size = 0.005
     result = intersect_with_grid(input_shapefile, grid_size)
     if not result.empty:
+        # ‰≥ˆ
         result.to_file(r'D:\shapefileceshi\out6\output_shapefile.shp')
         print("File has been saved.")
     else:
