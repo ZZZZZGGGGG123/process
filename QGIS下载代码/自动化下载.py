@@ -8,8 +8,8 @@ import os
 from shapely.geometry import Polygon
 
 # 选择目标shp文件，注意投影坐标系要和底图一致
-data = gpd.read_file('G:\桌面\新建文件夹 (2)\ceshi.shp')
-image_paved_out_dir = 'I:\PV\Test'
+data = gpd.read_file(r'D:\shapefileceshi\out3\output_shapefile.shp')
+image_paved_out_dir =r'D:\Afilter\result'
 
 
 for i, geom in enumerate(data['geometry']):
