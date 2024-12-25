@@ -7,8 +7,8 @@ from shapely.geometry import Polygon
 此代码在QGIS中运行，下载多边形的外接矩形所对应的遥感影像
 '''
 # 选择目标shp文件，注意投影坐标系要和底图一致
-data = gpd.read_file('G:/桌面/data append/China_PV_training_polygon_2020.shp')
-image_paved_out_dir = 'G:/桌面/新建文件夹 (4)/'
+data = gpd.read_file(r'D:\data3\or\2021shape.shp')
+image_paved_out_dir = 'D:\data3\image'
 
 for i, geom in enumerate(data['geometry']):
     # 检查是否为多边形或多边形集合
@@ -36,8 +36,8 @@ for i, geom in enumerate(data['geometry']):
         processing.run("native:rasterize", {
             'EXTENT': extent,
             'EXTENT_BUFFER': 0,
-            'TILE_SIZE': 512,
-            'MAP_UNITS_PER_PIXEL': 0.5,
+            'TILE_SIZE': 256,
+            'MAP_UNITS_PER_PIXEL': 1,
             'MAKE_BACKGROUND_TRANSPARENT': False,
             'MAP_THEME': None,
             'LAYERS': ['type=xyz&zmin=0&zmax=20&url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D{x}%26y%3D{y}%26z%3D{z}'],

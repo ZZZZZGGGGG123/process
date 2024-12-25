@@ -3,13 +3,22 @@ from shapely.geometry import box
 
 def create_grid(shapefile, grid_size):
     gdf = gpd.read_file(shapefile)
-    print("Loaded GeoDataFrame:", gdf.head())  # ´òÓ¡¼ÓÔØµÄÊı¾İÍ·²¿ĞÅÏ¢
+    print("Loaded GeoDataFrame:", gdf.head())  # æ‰“å°åŠ è½½çš„æ•°æ®å¤´éƒ¨ä¿¡æ¯
+    print("åŸå§‹åæ ‡æŠ•å½±æ˜¯", gdf.crs)
     
     bounds = gdf.total_bounds
     xmin, ymin, xmax, ymax = bounds
+
     rows = int((ymax - ymin) / grid_size)
     cols = int((xmax - xmin) / grid_size)
-    
+
+    print("Total bounds:", bounds)
+    print("Height of the area:", bounds[3] - bounds[1])
+    print("Width of the area:", bounds[2] - bounds[0])
+
+    print("Number of rows:", rows)
+    print("Number of columns:", cols)
+
     grid = []
     for i in range(rows):
         for j in range(cols):
@@ -20,29 +29,29 @@ def create_grid(shapefile, grid_size):
             grid.append(box(minx, miny, maxx, maxy))
     
     grid_gdf = gpd.GeoDataFrame(grid, columns=['geometry'], crs=gdf.crs)
-    print("Created grid GeoDataFrame:", grid_gdf.head())  # ´òÓ¡´´½¨µÄÍø¸ñµÄÍ·²¿ĞÅÏ¢
+    print("Created grid GeoDataFrame:", grid_gdf.head())  # æ‰“å°åˆ›å»ºçš„ç½‘æ ¼çš„å¤´éƒ¨ä¿¡æ¯
     return grid_gdf
 
 def intersect_with_grid(shapefile, grid_size):
     grid_gdf = create_grid(shapefile, grid_size)
     gdf = gpd.read_file(shapefile)
-     # ½øĞĞ¿Õ¼äÁ¬½Ó
+     # è¿›è¡Œç©ºé—´è¿æ¥
     joined = gpd.sjoin(grid_gdf, gdf, op='intersects')
     
-    # ±£ÁôÓëÊäÈë¶à±ßĞÎÏà½»µÄÍêÕû¸ñ×Ó
+    # ä¿ç•™ä¸è¾“å…¥å¤šè¾¹å½¢ç›¸äº¤çš„å®Œæ•´æ ¼å­
     complete_grid_gdf = grid_gdf[grid_gdf.index.isin(joined.index)]
     
     print("Complete grid GeoDataFrame:", complete_grid_gdf.head())
     return complete_grid_gdf
 
 def main():
-    #ÊäÈë
-    input_shapefile = r'D:\shapefileceshi\in\jiangsuwater.shp'
+    #è¾“å…¥
+    input_shapefile = r'I:\APV\å™ªå£°è¿‡æ»¤å\å°æ¹¾\å°æ¹¾.shp'
     grid_size = 0.005
     result = intersect_with_grid(input_shapefile, grid_size)
     if not result.empty:
-        #Êä³ö
-        result.to_file(r'D:\shapefileceshi\out6\output_shapefile.shp')
+        #è¾“å‡º
+        result.to_file(r'I:\APV\ç½‘æ ¼åŒ–è£å‰ªå\test\å°æ¹¾.shp')
         print("File has been saved.")
     else:
         print("No intersections found. No file saved.")

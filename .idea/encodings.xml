@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/图像信息读取/1.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图像信息读取/ADE_train_00000001.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图像信息读取/res.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图像信息读取/图像二值化点个数.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图像信息读取/查看通道数.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图像信息读取/读取图像信息.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图片格式转换函数/jpg转PNG.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图片格式转换函数/json转标签.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图片格式转换函数/json转标签2.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图片格式转换函数/tiff转PNG.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/图片格式转换函数/tiff转jpge.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/多级文件夹网格分块裁剪.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据检查/check.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据集划分/从文件夹中随机采样负样本.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据集划分/去txt文件后缀.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据集划分/数据集划分1.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据集划分/数据集划分2.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据集划分/数据集划分_图片复制到对应文件中.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/数据集划分/负样本标签复制.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/筛选.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/网格分块裁剪.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/网格裁剪.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/裁剪图片函数/创建文件夹.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/裁剪图片函数/裁剪一张遥感图像.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/裁剪图片函数/裁剪原图和标签2.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/裁剪图片函数/裁剪图像4.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/裁剪图片函数/裁标签.py" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

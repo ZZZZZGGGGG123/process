@@ -45,4 +45,5 @@ PNGCrop(
     r"E:\code\Pycode\PythonApplication3_裁剪原图+标签2\PythonApplication3_裁剪原图+标签2\in_png4",
     r"E:\code\Pycode\PythonApplication3_裁剪原图+标签2\PythonApplication3_裁剪原图+标签2\out_png3",
     768, 0)
-
+#768这个参数代表裁剪的子图片尺寸是768*768
+#0代表重复率，相邻两张图片的相交的比率为0
