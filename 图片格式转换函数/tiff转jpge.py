@@ -29,8 +29,8 @@ def convert_tiff_to_jpeg(input_folder, output_folder):
             print(f"Skipping {filename}: Not a TIFF image")
 
 if __name__ == "__main__":
-    input_folder = r"I:\APV\6各省遥感影像\浙江"  # Replace with the path to the folder containing TIFF images
-    output_folder = r"D:\test_Bisnet\img_jpg"  # Replace with the path to the folder where you want to save JPEG images
+    input_folder = r"D:\数据集2\裁剪后_最终数据集\负"  # Replace with the path to the folder containing TIFF images
+    output_folder = r"D:\数据集2\裁剪后_最终数据集\负_jpg"  # Replace with the path to the folder where you want to save JPEG images
 
     convert_tiff_to_jpeg(input_folder, output_folder)
 

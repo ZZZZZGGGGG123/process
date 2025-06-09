@@ -28,6 +28,6 @@ def count_targets_in_tiff(tiff_path):
 
 
 # Example usage
-tiff_path = r"E:\code\process\图像信息读取\1992.tif"
+tiff_path = r"E:\code\process\图像信息读取\67687.tif"
 target_count = count_targets_in_tiff(tiff_path)
 print(f"Number of target points: {target_count}")

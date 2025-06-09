@@ -9,8 +9,8 @@ from labelme import utils  # 导入标签工具的模块
 
 # 定义将JSON标注文件转换为图像的函数
 def Jsontopng(Yuan_path, num):
-    jpgs_path = r"E:\code\Pycode\PythonApplication3_json转标签2\PythonApplication3_json转标签2\res4_jpg"  # JPG图像保存路径
-    pngs_path = r"E:\code\Pycode\PythonApplication3_json转标签2\PythonApplication3_json转标签2\res4"  # PNG标签图像保存路径
+    jpgs_path = r"D:\数据集2\ew"  # JPG图像保存路径
+    pngs_path = r"D:\数据集2\补充数据集标签2"  # PNG标签图像保存路径
     classes = ["_background_", "PV"]  # 定义标签类别
     count = os.listdir(Yuan_path)  # 列出指定文件夹中的所有文件和子文件夹
     print(count)
@@ -85,5 +85,5 @@ def Jsontopng(Yuan_path, num):
  
 if __name__ == '__main__':
     num = 0  # 文件编号
-    Yuan_path = r"D:\简化\image_label"  # JSON文件所在路径
+    Yuan_path = r"D:\数据集2\补充数据集2"  # JSON文件所在路径
     Jsontopng(Yuan_path, num)  # 调用函数开始转换

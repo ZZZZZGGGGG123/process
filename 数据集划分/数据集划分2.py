@@ -2,11 +2,11 @@ import os
 import random
 
 # 定义原始图像路径和保存序号的txt文件路径
-image_dir = r"D:\数据集2\裁剪后\image_jpg"
-train_dir = r"D:\数据集2\裁剪后\ann_dir\train"
-val_dir = r"D:\数据集2\裁剪后\ann_dir\val"
-train_txt_path = r"D:\数据集2\裁剪后\ann_dir\train.txt"
-val_txt_path = r"D:\数据集2\裁剪后\ann_dir\val.txt"
+image_dir = r"D:\数据集2\裁剪后_最终数据集\image_jpg"
+train_dir = r"D:\数据集2\裁剪后_最终数据集\ann_dir\train"
+val_dir = r"D:\数据集2\裁剪后_最终数据集\ann_dir\val"
+train_txt_path = r"D:\数据集2\裁剪后_最终数据集\ann_dir\train.txt"
+val_txt_path = r"D:\数据集2\裁剪后_最终数据集\ann_dir\val.txt"
 
 # 获取所有图像文件名
 image_files = os.listdir(image_dir)

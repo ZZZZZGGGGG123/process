@@ -120,9 +120,9 @@ def DualCrop(inputTiffFolder, inputPngFolder, outputTiffFolder, outputPngFolder,
 
 # 示例用法
 DualCrop(
-    r"E:\code\Pycode\PythonApplication3_裁剪原图+标签2\PythonApplication3_裁剪原图+标签2\in4",  # 输入Tiff文件夹
-    r"E:\code\Pycode\PythonApplication3_裁剪原图+标签2\PythonApplication3_裁剪原图+标签2\in_png4",  # 输入PNG标签文件夹
-    r"E:\code\Pycode\PythonApplication3_裁剪原图+标签2\PythonApplication3_裁剪原图+标签2\out_tiff4",  # 输出Tiff文件夹
-    r"E:\code\Pycode\PythonApplication3_裁剪原图+标签2\PythonApplication3_裁剪原图+标签2\out_png4",  # 输出PNG标签文件夹
+    r"D:\数据集2\补充数据集2",  # 输入Tiff文件夹
+    r"D:\数据集2\补充数据集标签2",  # 输入PNG标签文件夹
+    r"D:\数据集2\1",  # 输出Tiff文件夹
+    r"D:\数据集2\2",  # 输出PNG标签文件夹
     768, 0  # 裁剪尺寸和重复率
 )
